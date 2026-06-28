@@ -1,0 +1,31 @@
+# Explainable VLM Deepfake Detection — dependencies
+# Python 3.10+  |  pip install -r requirements.txt
+# Note: script 1 (Scenario 2 fake generation) requires a GPU with ≥16 GB VRAM.
+
+# API clients
+openai>=1.60.0
+anthropic>=0.40.0
+google-genai>=0.8.0
+
+# Analysis & metrics
+numpy>=1.26.0
+pandas>=2.1.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Image handling
+pillow>=10.0.0
+
+# Fake generation (Stable Diffusion XL — script 1)
+torch>=2.1.0
+diffusers>=0.30.0
+transformers>=4.40.0
+accelerate>=0.30.0
+safetensors>=0.4.0
+
+# Utilities
+python-dotenv>=1.0.0
+tenacity>=8.2.0
+tqdm>=4.66.0

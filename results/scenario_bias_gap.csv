@@ -1,0 +1,7 @@
+condition,scenario1_acc,scenario2_mean_acc,bias_gap,model
+A,0.5525,0.7033,-0.1508,gpt-5.4-mini
+B,0.5508,0.6220,-0.0712,gpt-5.4-mini
+A,0.8331,0.7431,0.0899,gemini-2.5-pro
+B,0.6449,0.6034,0.0415,gemini-2.5-pro
+A,0.7450,0.6000,0.1450,claude-sonnet-4-6
+B,0.7450,0.5838,0.1612,claude-sonnet-4-6

@@ -1,0 +1,20 @@
+Section 5.4 — Explanation Quality (collapsed page-wide tables)
+Table A combines faithfulness + LLM-judge + consistency/sensitivity (per model);
+Table B combines reasoning + self-calibration + content (per model x condition).
+
+=== Combined Table A: per-model auditability (cond. B + pooled consistency) ===
+| Model | Tool | Num | Faith | J-Grnd | J-Hal | BLEU | Cos | Sens-SC | Sens-LI |
+|---|---|---|---|---|---|---|---|---|---|
+| GPT | 1.00 | 0.00 | 0.50 | 3.29 | 0.515 | 0.43 | 0.63 | 0.149 | 0.149 |
+| Gemini | 0.99 | 0.99 | 0.99 | 4.61 | 0.091 | 0.46 | 0.72 | 0.194 | 0.198 |
+| Claude | 0.98 | 0.96 | 0.97 | -- | -- | 0.43 | 0.69 | 0.167 | 0.170 |
+
+=== Combined Table B: per-model x condition (reasoning + self-cal + content) ===
+| Model | Cond | Align | Conn | Comp | Pearson | Spec% | Manip | Content |
+|---|---|---|---|---|---|---|---|---|
+| GPT | A | 0.86 | 0.15 | 0.61 | 0.11 | 0.2 | 0.1 | 12.7 |
+| GPT | B | 0.71 | 0.05 | 0.97 | 0.02 | 3.7 | 19.5 | 2.7 |
+| Gemini | A | 0.95 | 0.09 | 0.66 | 0.14 | 0.6 | 0.8 | 17.6 |
+| Gemini | B | 0.96 | 0.08 | 0.99 | 0.02 | 3.0 | 33.6 | 8.4 |
+| Claude | A | 1.00 | 0.18 | 0.52 | 0.13 | 0.6 | 0.7 | 28.7 |
+| Claude | B | 0.98 | 0.19 | 0.74 | 0.08 | 1.6 | 17.8 | 32.4 |

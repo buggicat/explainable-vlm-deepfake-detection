@@ -1,0 +1,25 @@
+Section 4.5 / 5.4 — Consistency & Sensitivity (per model, per scenario)
+computed by notebook/compute_consistency.py from the scored JSONL
+
+=== Table: Cross-condition consistency (A vs B, per scenario) ===
+| Model | Scenario | BLEU-1 | Cosine | n |
+|---|---|---|---|---|
+| GPT | S1 | 0.43 | 0.63 | 1200 |
+| GPT | S2-SC | 0.43 | 0.63 | 1200 |
+| GPT | S2-LI | 0.43 | 0.63 | 1200 |
+| Gemini | S1 | 0.46 | 0.71 | 1200 |
+| Gemini | S2-SC | 0.46 | 0.73 | 1200 |
+| Gemini | S2-LI | 0.46 | 0.73 | 1200 |
+| Claude | S1 | 0.43 | 0.68 | 200 |
+| Claude | S2-SC | 0.43 | 0.70 | 200 |
+| Claude | S2-LI | 0.43 | 0.68 | 200 |
+
+=== Table: Contrastive sensitivity (1 - cos(real,fake), per scenario) ===
+| Model | Scenario | Contr. div. | n |
+|---|---|---|---|
+| GPT | S2-SC | 0.149 | 1200 |
+| GPT | S2-LI | 0.149 | 1200 |
+| Gemini | S2-SC | 0.194 | 1196 |
+| Gemini | S2-LI | 0.198 | 1197 |
+| Claude | S2-SC | 0.167 | 200 |
+| Claude | S2-LI | 0.170 | 200 |
