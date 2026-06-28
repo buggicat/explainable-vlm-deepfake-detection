@@ -1,0 +1,4 @@
+metric,value,n_pairs
+Contrastive sensitivity (mean divergence),0.1722,5193
+"Cross-condition BLEU-1 (A vs B, same image)",0.4435,7800
+Cross-condition semantic cosine (A vs B),0.6767,7800

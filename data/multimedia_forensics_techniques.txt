@@ -1,0 +1,77 @@
+IMAGE & VIDEO PHYSICS-BASED FORENSICS
+1. Illumination consistency analysis
+2. Specular highlight consistency
+3. Shadow geometry and temporal shadow consistency
+4. 3D facial geometry consistency
+5. Perspective and camera model consistency
+6. Image formation model violations
+
+FREQUENCY & TRANSFORM-DOMAIN FORENSICS
+7. Fourier magnitude spectrum analysis (FFT)
+8. Radial and angular frequency profiling
+9. Discrete Cosine Transform (DCT) statistics
+10. Wavelet domain analysis
+11. High-pass / band-pass residual analysis
+
+SENSOR & NOISE-BASED FORENSICS
+12. PRNU (Photo-Response Non-Uniformity)
+13. PRNU proxy / noise residual stationarity
+14. Demosaicing artifact analysis
+15. Sensor pipeline consistency checks
+
+COMPRESSION & ENCODING FORENSICS
+16. Error Level Analysis (ELA)
+17. JPEG quantization table analysis
+18. Double compression detection
+19. Video codec artifact analysis
+
+SPATIAL MANIPULATION FORENSICS
+20. Splicing boundary detection
+21. Copy-move forgery detection
+22. Texture inconsistency analysis
+23. Blending and alpha-matte anomalies
+
+TEMPORAL & MOTION FORENSICS (VIDEO)
+24. Optical flow consistency
+25. Temporal coherence analysis
+26. Physiological signal analysis
+27. Head pose and motion dynamics
+
+AUDIO & AUDIO-VISUAL FORENSICS
+28. Lip-sync consistency
+29. Audio-visual embedding alignment
+30. Speech prosody and voice biometrics
+31. Audio spectral artifact analysis
+
+METADATA & PROVENANCE FORENSICS
+32. EXIF and container metadata consistency
+33. Metadata–content contradiction analysis
+34. Provenance graph reasoning
+
+GENERATIVE MODEL FINGERPRINTING
+35. GAN fingerprint detection
+36. Diffusion model latent inversion analysis
+37. Autoencoder reconstruction error analysis
+38. Model source attribution
+39. Watermark and active signal detection
+
+LEARNING-BASED DETECTION
+40. CNN-based manipulation classifiers
+41. Transformer-based detectors
+42. Graph neural network forensic models
+43. Prototype-based temporal models
+44. Self-supervised and contrastive anomaly detection
+
+EXPLAINABILITY METHODS
+45. SHAP
+46. LIME
+47. Saliency maps
+48. Attention map inspection
+49. Prototype and example-based explanations
+
+HYBRID & META-FORENSIC TECHNIQUES
+50. Physics-constrained explainability
+51. Explanation–evidence alignment metrics
+52. Human-in-the-loop forensic validation
+53. Adversarial robustness evaluation of explanations
+54. Cross-modal consistency reasoning

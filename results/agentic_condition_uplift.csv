@@ -1,0 +1,10 @@
+scenario,scenario_label,condition_A_acc,condition_B_acc,uplift_B_minus_A,model
+scenario1,S1 (biased benchmark),0.5525,0.5508,-0.0017,gpt-5.4-mini
+scenario2_local_inpaint,"S2 (local inpaint, bias-free)",0.6408,0.5818,-0.0590,gpt-5.4-mini
+scenario2_self_cond,"S2 (self-conditioned, bias-free)",0.7658,0.6622,-0.1036,gpt-5.4-mini
+scenario1,S1 (biased benchmark),0.8331,0.6449,-0.1882,gemini-2.5-pro
+scenario2_local_inpaint,"S2 (local inpaint, bias-free)",0.7256,0.5965,-0.1291,gemini-2.5-pro
+scenario2_self_cond,"S2 (self-conditioned, bias-free)",0.7606,0.6104,-0.1503,gemini-2.5-pro
+scenario1,S1 (biased benchmark),0.7450,0.7450,0.0000,claude-sonnet-4-6
+scenario2_local_inpaint,"S2 (local inpaint, bias-free)",0.5250,0.5126,-0.0124,claude-sonnet-4-6
+scenario2_self_cond,"S2 (self-conditioned, bias-free)",0.6750,0.6550,-0.0200,claude-sonnet-4-6

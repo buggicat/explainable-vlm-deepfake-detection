@@ -1,0 +1,31 @@
+{
+  "n_judged": 198,
+  "by_group": {
+    "gemini-2.5-pro|scenario1|B": {
+      "n": 33,
+      "groundedness_mean": 4.515
+    },
+    "gemini-2.5-pro|scenario2_local_inpaint|B": {
+      "n": 33,
+      "groundedness_mean": 4.576
+    },
+    "gemini-2.5-pro|scenario2_self_cond|B": {
+      "n": 33,
+      "groundedness_mean": 4.727
+    },
+    "gpt-5.4-mini|scenario1|B": {
+      "n": 33,
+      "groundedness_mean": 3.303
+    },
+    "gpt-5.4-mini|scenario2_local_inpaint|B": {
+      "n": 33,
+      "groundedness_mean": 3.424
+    },
+    "gpt-5.4-mini|scenario2_self_cond|B": {
+      "n": 33,
+      "groundedness_mean": 3.152
+    }
+  },
+  "groundedness_mean": 3.949,
+  "hallucination_detected_rate": 0.303
+}

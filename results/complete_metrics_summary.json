@@ -1,0 +1,1165 @@
+{
+  "openai|scenario1|A": {
+    "n": 1200,
+    "model": "gpt-5.4-mini",
+    "accuracy": 0.5525,
+    "precision": 0.574468085106383,
+    "recall": 0.405,
+    "f1": 0.4750733137829912,
+    "mcc": 0.10989042584741843,
+    "cohen_kappa": 0.10499999999999998,
+    "confusion_matrix": [
+      [
+        420,
+        180
+      ],
+      [
+        357,
+        243
+      ]
+    ],
+    "auc": 0.5610888888888889,
+    "pr_auc": 0.5568521503148695,
+    "log_loss": 0.7820053798582927,
+    "brier_score": 0.2721483333333334,
+    "ece": 0.13261666666666672,
+    "confidence_mean": 0.47191666666666665,
+    "confidence_std": 0.20962584061979467,
+    "trace_has_output_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "tool_stats_mean": {
+      "n_code": 0.0,
+      "n_web": 0.0
+    },
+    "explanation_mean": {
+      "word_count": 1048.0258333333334,
+      "forensic_term_count": 2.175,
+      "forensic_specificity_ratio": 0.0020784465893233105,
+      "manipulation_term_count": 0.15833333333333333,
+      "content_term_count": 12.811666666666667,
+      "pathway_steps": 4.0,
+      "evidence_count": 4.154166666666667,
+      "unique_forensic_categories": 2.51,
+      "has_alternative_hypothesis_rate": 1.0,
+      "has_plain_language_rate": 1.0,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.024572749541180383,
+      "spearman_r": 0.020703584288607392,
+      "n": 1200
+    },
+    "evidence_verdict_alignment_mean": 0.825,
+    "evidence_verdict_alignment_n": 1200,
+    "reasoning_connectivity_mean": 0.15937,
+    "connective_count_mean": 8.440833333333334,
+    "compactness_mean": 0.6054166666666667,
+    "category_coverage_ratio_mean": 0.27886116666666666
+  },
+  "openai|scenario1|B": {
+    "n": 1200,
+    "model": "gpt-5.4-mini",
+    "accuracy": 0.5508333333333333,
+    "precision": 0.5608782435129741,
+    "recall": 0.4683333333333333,
+    "f1": 0.5104450499545867,
+    "mcc": 0.10307951920630871,
+    "cohen_kappa": 0.10166666666666668,
+    "confusion_matrix": [
+      [
+        380,
+        220
+      ],
+      [
+        319,
+        281
+      ]
+    ],
+    "auc": 0.5253041666666665,
+    "pr_auc": 0.5085668305935503,
+    "log_loss": 0.8125348865437305,
+    "brier_score": 0.2769714166666667,
+    "ece": 0.1255416666666667,
+    "confidence_mean": 0.5280583333333333,
+    "confidence_std": 0.17680256388758117,
+    "faithfulness_mean": 0.49958298582151794,
+    "tool_presence_mean": 0.9991659716430359,
+    "numeric_grounding_mean": 0.0,
+    "trace_has_output_rate": 0.0,
+    "hallucination_rate": 0.030833333333333334,
+    "tool_stats_mean": {
+      "n_code": 5.4158333333333335,
+      "n_web": 0.0
+    },
+    "explanation_mean": {
+      "word_count": 1038.8041666666666,
+      "forensic_term_count": 38.725833333333334,
+      "forensic_specificity_ratio": 0.03718175603243542,
+      "manipulation_term_count": 19.651666666666667,
+      "content_term_count": 2.504166666666667,
+      "pathway_steps": 4.0,
+      "evidence_count": 3.8475,
+      "unique_forensic_categories": 3.7408333333333332,
+      "has_alternative_hypothesis_rate": 1.0,
+      "has_plain_language_rate": 1.0,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.02239219487963834,
+      "spearman_r": 0.015583969240560396,
+      "n": 1200
+    },
+    "evidence_verdict_alignment_mean": 0.6691666666666667,
+    "evidence_verdict_alignment_n": 1200,
+    "reasoning_connectivity_mean": 0.0488315,
+    "connective_count_mean": 4.295833333333333,
+    "compactness_mean": 0.97305575,
+    "category_coverage_ratio_mean": 0.4156071666666667
+  },
+  "gemini|scenario1|A": {
+    "n": 1198,
+    "model": "gemini-2.5-pro",
+    "accuracy": 0.8330550918196995,
+    "precision": 0.752851711026616,
+    "recall": 0.991652754590985,
+    "f1": 0.8559077809798271,
+    "mcc": 0.7023809758286201,
+    "cohen_kappa": 0.666110183639399,
+    "confusion_matrix": [
+      [
+        404,
+        195
+      ],
+      [
+        5,
+        594
+      ]
+    ],
+    "auc": 0.9149570374664509,
+    "pr_auc": 0.8672886208341055,
+    "log_loss": 0.5711805422500862,
+    "brier_score": 0.12715066777963274,
+    "ece": 0.1192737896494157,
+    "confidence_mean": 0.6192737896494157,
+    "confidence_std": 0.4192503328165331,
+    "trace_has_output_rate": 0.0,
+    "hallucination_rate": 0.010833333333333334,
+    "tool_stats_mean": {
+      "n_code": 0.0,
+      "n_web": 0.0
+    },
+    "explanation_mean": {
+      "word_count": 1240.54,
+      "forensic_term_count": 7.15,
+      "forensic_specificity_ratio": 0.0057451881607751745,
+      "manipulation_term_count": 0.6533333333333333,
+      "content_term_count": 19.7675,
+      "pathway_steps": 3.993333333333333,
+      "evidence_count": 3.6466666666666665,
+      "unique_forensic_categories": 2.3308333333333335,
+      "has_alternative_hypothesis_rate": 0.9983333333333333,
+      "has_plain_language_rate": 0.9983333333333333,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.1562951074229128,
+      "spearman_r": 0.1487854372108929,
+      "n": 1198
+    },
+    "evidence_verdict_alignment_mean": 0.9616026711185309,
+    "evidence_verdict_alignment_n": 1198,
+    "reasoning_connectivity_mean": 0.08772358333333333,
+    "connective_count_mean": 6.318333333333333,
+    "compactness_mean": 0.6456503338898163,
+    "category_coverage_ratio_mean": 0.25895558333333335
+  },
+  "anthropic|scenario1|A": {
+    "n": 200,
+    "model": "claude-sonnet-4-6",
+    "accuracy": 0.745,
+    "precision": 0.6929133858267716,
+    "recall": 0.88,
+    "f1": 0.775330396475771,
+    "mcc": 0.5089003967866784,
+    "cohen_kappa": 0.49,
+    "confusion_matrix": [
+      [
+        61,
+        39
+      ],
+      [
+        12,
+        88
+      ]
+    ],
+    "auc": 0.80725,
+    "pr_auc": 0.7968032353921028,
+    "log_loss": 0.5654230793203512,
+    "brier_score": 0.186991,
+    "ece": 0.10010000000000001,
+    "confidence_mean": 0.5792999999999999,
+    "confidence_std": 0.3130535257747467,
+    "trace_has_output_rate": 0.0,
+    "hallucination_rate": 0.015,
+    "tool_stats_mean": {
+      "n_code": 0.0,
+      "n_web": 0.0
+    },
+    "explanation_mean": {
+      "word_count": 1606.155,
+      "forensic_term_count": 8.6,
+      "forensic_specificity_ratio": 0.0053926148100328,
+      "manipulation_term_count": 0.815,
+      "content_term_count": 28.445,
+      "pathway_steps": 4.0,
+      "evidence_count": 4.835,
+      "unique_forensic_categories": 2.53,
+      "has_alternative_hypothesis_rate": 1.0,
+      "has_plain_language_rate": 1.0,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.2622531404871425,
+      "spearman_r": 0.2734158470721323,
+      "n": 200
+    },
+    "evidence_verdict_alignment_mean": 1.0,
+    "evidence_verdict_alignment_n": 200,
+    "reasoning_connectivity_mean": 0.1702715,
+    "connective_count_mean": 10.43,
+    "compactness_mean": 0.52375,
+    "category_coverage_ratio_mean": 0.28108299999999997
+  },
+  "gemini|scenario1|B": {
+    "n": 1194,
+    "model": "gemini-2.5-pro",
+    "accuracy": 0.644891122278057,
+    "precision": 0.6628571428571428,
+    "recall": 0.584873949579832,
+    "f1": 0.6214285714285714,
+    "mcc": 0.2915076054813488,
+    "cohen_kappa": 0.2894951791503515,
+    "confusion_matrix": [
+      [
+        422,
+        177
+      ],
+      [
+        247,
+        348
+      ]
+    ],
+    "auc": 0.6632889549809907,
+    "pr_auc": 0.6315844254566002,
+    "log_loss": 1.3637402711478837,
+    "brier_score": 0.25690963149078727,
+    "ece": 0.11876884422110551,
+    "confidence_mean": 0.4741289782244556,
+    "confidence_std": 0.28916929502812566,
+    "faithfulness_mean": 0.9834101060859854,
+    "tool_presence_mean": 0.9857621440536013,
+    "numeric_grounding_mean": 0.9810580681183696,
+    "trace_has_output_rate": 0.9808333333333333,
+    "hallucination_rate": 0.019166666666666665,
+    "tool_stats_mean": {
+      "n_code": 3.2925,
+      "n_web": 0.0025,
+      "tool_success_rate": 1.0
+    },
+    "explanation_mean": {
+      "word_count": 1301.4691666666668,
+      "forensic_term_count": 38.825,
+      "forensic_specificity_ratio": 0.0296634595202958,
+      "manipulation_term_count": 33.766666666666666,
+      "content_term_count": 9.3825,
+      "pathway_steps": 3.98,
+      "evidence_count": 3.484166666666667,
+      "unique_forensic_categories": 3.4525,
+      "has_alternative_hypothesis_rate": 0.995,
+      "has_plain_language_rate": 0.995,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.0878038051636375,
+      "spearman_r": 0.0883609430576067,
+      "n": 1194
+    },
+    "evidence_verdict_alignment_mean": 0.9472361809045227,
+    "evidence_verdict_alignment_n": 1194,
+    "reasoning_connectivity_mean": 0.08217933333333334,
+    "connective_count_mean": 7.939166666666667,
+    "compactness_mean": 0.9917505862646566,
+    "category_coverage_ratio_mean": 0.3835731666666667
+  },
+  "anthropic|scenario1|B": {
+    "n": 200,
+    "model": "claude-sonnet-4-6",
+    "accuracy": 0.745,
+    "precision": 0.6870229007633588,
+    "recall": 0.9,
+    "f1": 0.7792207792207793,
+    "mcc": 0.5153898802076178,
+    "cohen_kappa": 0.49,
+    "confusion_matrix": [
+      [
+        59,
+        41
+      ],
+      [
+        10,
+        90
+      ]
+    ],
+    "auc": 0.77935,
+    "pr_auc": 0.7362689370424174,
+    "log_loss": 0.5844413276621334,
+    "brier_score": 0.1920815,
+    "ece": 0.09914999999999999,
+    "confidence_mean": 0.56155,
+    "confidence_std": 0.30090380107270165,
+    "faithfulness_mean": 1.0,
+    "tool_presence_mean": 1.0,
+    "numeric_grounding_mean": 1.0,
+    "trace_has_output_rate": 0.09,
+    "hallucination_rate": 0.02,
+    "tool_stats_mean": {
+      "n_code": 7.34,
+      "n_web": 0.27,
+      "tool_success_rate": 1.0
+    },
+    "explanation_mean": {
+      "word_count": 1949.265,
+      "forensic_term_count": 32.06,
+      "forensic_specificity_ratio": 0.016465162066209807,
+      "manipulation_term_count": 17.875,
+      "content_term_count": 32.71,
+      "pathway_steps": 4.0,
+      "evidence_count": 5.415,
+      "unique_forensic_categories": 3.91,
+      "has_alternative_hypothesis_rate": 1.0,
+      "has_plain_language_rate": 1.0,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.12077674075025309,
+      "spearman_r": 0.1362298698022249,
+      "n": 200
+    },
+    "evidence_verdict_alignment_mean": 0.99,
+    "evidence_verdict_alignment_n": 200,
+    "reasoning_connectivity_mean": 0.190378,
+    "connective_count_mean": 18.0,
+    "compactness_mean": 0.7356565,
+    "category_coverage_ratio_mean": 0.434425
+  },
+  "openai|scenario2_self_cond|A": {
+    "n": 1200,
+    "model": "gpt-5.4-mini",
+    "accuracy": 0.7658333333333334,
+    "precision": 0.7031847133757961,
+    "recall": 0.92,
+    "f1": 0.7971119133574007,
+    "mcc": 0.5588970358732014,
+    "cohen_kappa": 0.5316666666666667,
+    "confusion_matrix": [
+      [
+        367,
+        233
+      ],
+      [
+        48,
+        552
+      ]
+    ],
+    "auc": 0.8358000000000001,
+    "pr_auc": 0.7947418900957323,
+    "log_loss": 0.6032377486432786,
+    "brier_score": 0.18167683333333334,
+    "ece": 0.11546666666666666,
+    "confidence_mean": 0.6139,
+    "confidence_std": 0.23338871009541143,
+    "trace_has_output_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "tool_stats_mean": {
+      "n_code": 0.0,
+      "n_web": 0.0
+    },
+    "explanation_mean": {
+      "word_count": 1046.2666666666667,
+      "forensic_term_count": 2.2291666666666665,
+      "forensic_specificity_ratio": 0.002130753083143424,
+      "manipulation_term_count": 0.10083333333333333,
+      "content_term_count": 12.796666666666667,
+      "pathway_steps": 4.0,
+      "evidence_count": 4.178333333333334,
+      "unique_forensic_categories": 2.5741666666666667,
+      "has_alternative_hypothesis_rate": 1.0,
+      "has_plain_language_rate": 1.0,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.22097507327977356,
+      "spearman_r": 0.21809734268934133,
+      "n": 1200
+    },
+    "evidence_verdict_alignment_mean": 0.895,
+    "evidence_verdict_alignment_n": 1200,
+    "reasoning_connectivity_mean": 0.14643366666666666,
+    "connective_count_mean": 7.7625,
+    "compactness_mean": 0.6170833333333333,
+    "category_coverage_ratio_mean": 0.28599016666666666
+  },
+  "openai|scenario2_self_cond|B": {
+    "n": 1199,
+    "model": "gpt-5.4-mini",
+    "accuracy": 0.6622185154295246,
+    "precision": 0.6525157232704403,
+    "recall": 0.6928213689482471,
+    "f1": 0.6720647773279352,
+    "mcc": 0.32509101724194206,
+    "cohen_kappa": 0.32447133355684254,
+    "confusion_matrix": [
+      [
+        379,
+        221
+      ],
+      [
+        184,
+        415
+      ]
+    ],
+    "auc": 0.68840428491931,
+    "pr_auc": 0.6783631798932666,
+    "log_loss": 0.6658576827778139,
+    "brier_score": 0.23048465387823183,
+    "ece": 0.07356964136780651,
+    "confidence_mean": 0.5535029190992493,
+    "confidence_std": 0.18405788275247018,
+    "faithfulness_mean": 0.5,
+    "tool_presence_mean": 1.0,
+    "numeric_grounding_mean": 0.0,
+    "trace_has_output_rate": 0.0,
+    "hallucination_rate": 0.0375,
+    "tool_stats_mean": {
+      "n_code": 5.221666666666667,
+      "n_web": 0.0
+    },
+    "explanation_mean": {
+      "word_count": 1032.9916666666666,
+      "forensic_term_count": 38.31,
+      "forensic_specificity_ratio": 0.03703385998495729,
+      "manipulation_term_count": 19.265833333333333,
+      "content_term_count": 2.7191666666666667,
+      "pathway_steps": 3.9966666666666666,
+      "evidence_count": 3.8691666666666666,
+      "unique_forensic_categories": 3.755,
+      "has_alternative_hypothesis_rate": 0.9991666666666666,
+      "has_plain_language_rate": 0.9991666666666666,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.060129657742872704,
+      "spearman_r": 0.058763777260199136,
+      "n": 1199
+    },
+    "evidence_verdict_alignment_mean": 0.74395329441201,
+    "evidence_verdict_alignment_n": 1199,
+    "reasoning_connectivity_mean": 0.04896241666666667,
+    "connective_count_mean": 4.2725,
+    "compactness_mean": 0.9710039199332777,
+    "category_coverage_ratio_mean": 0.4171815
+  },
+  "gemini|scenario2_self_cond|A": {
+    "n": 1199,
+    "model": "gemini-2.5-pro",
+    "accuracy": 0.7606338615512928,
+    "precision": 0.7882136279926335,
+    "recall": 0.7133333333333334,
+    "f1": 0.7489063867016623,
+    "mcc": 0.5236773877479205,
+    "cohen_kappa": 0.5213053500209359,
+    "confusion_matrix": [
+      [
+        484,
+        115
+      ],
+      [
+        172,
+        428
+      ]
+    ],
+    "auc": 0.8028923205342237,
+    "pr_auc": 0.7871084352369817,
+    "log_loss": 1.2227833606133929,
+    "brier_score": 0.20309599666388656,
+    "ece": 0.1586405337781484,
+    "confidence_mean": 0.43336947456213515,
+    "confidence_std": 0.4235055531673823,
+    "trace_has_output_rate": 0.0,
+    "hallucination_rate": 0.011666666666666667,
+    "tool_stats_mean": {
+      "n_code": 0.0,
+      "n_web": 0.0
+    },
+    "explanation_mean": {
+      "word_count": 1242.3516666666667,
+      "forensic_term_count": 7.4175,
+      "forensic_specificity_ratio": 0.0059615999717809775,
+      "manipulation_term_count": 0.8583333333333333,
+      "content_term_count": 16.9425,
+      "pathway_steps": 3.9966666666666666,
+      "evidence_count": 3.609166666666667,
+      "unique_forensic_categories": 2.375,
+      "has_alternative_hypothesis_rate": 0.9991666666666666,
+      "has_plain_language_rate": 0.9991666666666666,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.12037260440960028,
+      "spearman_r": 0.12186296196001904,
+      "n": 1199
+    },
+    "evidence_verdict_alignment_mean": 0.9424520433694745,
+    "evidence_verdict_alignment_n": 1199,
+    "reasoning_connectivity_mean": 0.09658416666666667,
+    "connective_count_mean": 6.880833333333333,
+    "compactness_mean": 0.6626553794829024,
+    "category_coverage_ratio_mean": 0.2638625
+  },
+  "gemini|scenario2_self_cond|B": {
+    "n": 1196,
+    "model": "gemini-2.5-pro",
+    "accuracy": 0.6103678929765887,
+    "precision": 0.6395833333333333,
+    "recall": 0.5116666666666667,
+    "f1": 0.5685185185185185,
+    "mcc": 0.22583733022687633,
+    "cohen_kappa": 0.22124972054549508,
+    "confusion_matrix": [
+      [
+        423,
+        173
+      ],
+      [
+        293,
+        307
+      ]
+    ],
+    "auc": 0.6180047539149889,
+    "pr_auc": 0.599008462322688,
+    "log_loss": 1.5733224206191463,
+    "brier_score": 0.28235376254180605,
+    "ece": 0.15676421404682273,
+    "confidence_mean": 0.4499080267558529,
+    "confidence_std": 0.2999220772308827,
+    "faithfulness_mean": 0.991238154960981,
+    "tool_presence_mean": 0.9941471571906354,
+    "numeric_grounding_mean": 0.9883291527313266,
+    "trace_has_output_rate": 0.9908333333333333,
+    "hallucination_rate": 0.010833333333333334,
+    "tool_stats_mean": {
+      "n_code": 3.4166666666666665,
+      "n_web": 0.0025,
+      "tool_success_rate": 1.0
+    },
+    "explanation_mean": {
+      "word_count": 1323.0541666666666,
+      "forensic_term_count": 40.74583333333333,
+      "forensic_specificity_ratio": 0.03063390345581047,
+      "manipulation_term_count": 33.51416666666667,
+      "content_term_count": 8.106666666666667,
+      "pathway_steps": 3.986666666666667,
+      "evidence_count": 3.4725,
+      "unique_forensic_categories": 3.4325,
+      "has_alternative_hypothesis_rate": 0.9966666666666667,
+      "has_plain_language_rate": 0.9966666666666667,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": -0.014501794584806587,
+      "spearman_r": -0.012408405295136735,
+      "n": 1196
+    },
+    "evidence_verdict_alignment_mean": 0.9581939799331104,
+    "evidence_verdict_alignment_n": 1196,
+    "reasoning_connectivity_mean": 0.08331775,
+    "connective_count_mean": 8.14,
+    "compactness_mean": 0.9891307692307693,
+    "category_coverage_ratio_mean": 0.3813515
+  },
+  "openai|scenario2_local_inpaint|A": {
+    "n": 1200,
+    "model": "gpt-5.4-mini",
+    "accuracy": 0.6408333333333334,
+    "precision": 0.638752052545156,
+    "recall": 0.6483333333333333,
+    "f1": 0.6435070306038048,
+    "mcc": 0.2816983595149351,
+    "cohen_kappa": 0.2816666666666666,
+    "confusion_matrix": [
+      [
+        380,
+        220
+      ],
+      [
+        211,
+        389
+      ]
+    ],
+    "auc": 0.6635819444444444,
+    "pr_auc": 0.6539632631088169,
+    "log_loss": 0.7177848276241342,
+    "brier_score": 0.2390898333333333,
+    "ece": 0.09671666666666666,
+    "confidence_mean": 0.5411166666666667,
+    "confidence_std": 0.2215082836424458,
+    "trace_has_output_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "tool_stats_mean": {
+      "n_code": 0.0,
+      "n_web": 0.0
+    },
+    "explanation_mean": {
+      "word_count": 1050.7316666666666,
+      "forensic_term_count": 2.1066666666666665,
+      "forensic_specificity_ratio": 0.002005904961326211,
+      "manipulation_term_count": 0.16,
+      "content_term_count": 12.403333333333334,
+      "pathway_steps": 4.0,
+      "evidence_count": 4.1775,
+      "unique_forensic_categories": 2.5875,
+      "has_alternative_hypothesis_rate": 1.0,
+      "has_plain_language_rate": 1.0,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.07463647667428554,
+      "spearman_r": 0.08535411153203949,
+      "n": 1200
+    },
+    "evidence_verdict_alignment_mean": 0.8475,
+    "evidence_verdict_alignment_n": 1200,
+    "reasoning_connectivity_mean": 0.15385175,
+    "connective_count_mean": 8.160833333333333,
+    "compactness_mean": 0.6211666666666666,
+    "category_coverage_ratio_mean": 0.28747133333333336
+  },
+  "openai|scenario2_local_inpaint|B": {
+    "n": 1198,
+    "model": "gpt-5.4-mini",
+    "accuracy": 0.5818030050083473,
+    "precision": 0.5976331360946746,
+    "recall": 0.505,
+    "f1": 0.5474254742547425,
+    "mcc": 0.16583026223666975,
+    "cohen_kappa": 0.16382041444107298,
+    "confusion_matrix": [
+      [
+        394,
+        204
+      ],
+      [
+        297,
+        303
+      ]
+    ],
+    "auc": 0.5912918060200668,
+    "pr_auc": 0.5791781843623027,
+    "log_loss": 0.7171929961820912,
+    "brier_score": 0.2557728714524207,
+    "ece": 0.08541736227045076,
+    "confidence_mean": 0.5218948247078464,
+    "confidence_std": 0.17718725828180584,
+    "faithfulness_mean": 0.5,
+    "tool_presence_mean": 1.0,
+    "numeric_grounding_mean": 0.0,
+    "trace_has_output_rate": 0.0,
+    "hallucination_rate": 0.043333333333333335,
+    "tool_stats_mean": {
+      "n_code": 5.300833333333333,
+      "n_web": 0.0
+    },
+    "explanation_mean": {
+      "word_count": 1034.1641666666667,
+      "forensic_term_count": 38.54666666666667,
+      "forensic_specificity_ratio": 0.037159771469306914,
+      "manipulation_term_count": 19.4575,
+      "content_term_count": 2.86,
+      "pathway_steps": 3.993333333333333,
+      "evidence_count": 3.8625,
+      "unique_forensic_categories": 3.7508333333333335,
+      "has_alternative_hypothesis_rate": 0.9983333333333333,
+      "has_plain_language_rate": 0.9983333333333333,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": -0.022174628031766952,
+      "spearman_r": -0.012329759096010322,
+      "n": 1198
+    },
+    "evidence_verdict_alignment_mean": 0.7070116861435726,
+    "evidence_verdict_alignment_n": 1198,
+    "reasoning_connectivity_mean": 0.04822233333333333,
+    "connective_count_mean": 4.2091666666666665,
+    "compactness_mean": 0.9717726210350585,
+    "category_coverage_ratio_mean": 0.41671891666666666
+  },
+  "gemini|scenario2_local_inpaint|A": {
+    "n": 1199,
+    "model": "gemini-2.5-pro",
+    "accuracy": 0.725604670558799,
+    "precision": 0.7864693446088795,
+    "recall": 0.62,
+    "f1": 0.6933830382106244,
+    "mcc": 0.46178295337862757,
+    "cohen_kappa": 0.4513059044937804,
+    "confusion_matrix": [
+      [
+        498,
+        101
+      ],
+      [
+        228,
+        372
+      ]
+    ],
+    "auc": 0.7488772954924875,
+    "pr_auc": 0.7549016948004699,
+    "log_loss": 1.6794473694252727,
+    "brier_score": 0.23632218515429526,
+    "ece": 0.1905004170141785,
+    "confidence_mean": 0.3844954128440367,
+    "confidence_std": 0.41036820030369386,
+    "trace_has_output_rate": 0.0,
+    "hallucination_rate": 0.005833333333333334,
+    "tool_stats_mean": {
+      "n_code": 0.0,
+      "n_web": 0.0
+    },
+    "explanation_mean": {
+      "word_count": 1247.7466666666667,
+      "forensic_term_count": 7.815833333333333,
+      "forensic_specificity_ratio": 0.006258583784000139,
+      "manipulation_term_count": 0.9775,
+      "content_term_count": 16.188333333333333,
+      "pathway_steps": 3.9966666666666666,
+      "evidence_count": 3.6108333333333333,
+      "unique_forensic_categories": 2.415,
+      "has_alternative_hypothesis_rate": 0.9991666666666666,
+      "has_plain_language_rate": 0.9991666666666666,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.13136752466634108,
+      "spearman_r": 0.12081535084630196,
+      "n": 1199
+    },
+    "evidence_verdict_alignment_mean": 0.9382819015846539,
+    "evidence_verdict_alignment_n": 1199,
+    "reasoning_connectivity_mean": 0.09746183333333333,
+    "connective_count_mean": 6.98,
+    "compactness_mean": 0.6747495412844037,
+    "category_coverage_ratio_mean": 0.2683065
+  },
+  "gemini|scenario2_local_inpaint|B": {
+    "n": 1197,
+    "model": "gemini-2.5-pro",
+    "accuracy": 0.5964912280701754,
+    "precision": 0.6218487394957983,
+    "recall": 0.4941569282136895,
+    "f1": 0.5506976744186046,
+    "mcc": 0.19733115816738409,
+    "cohen_kappa": 0.19312042672502217,
+    "confusion_matrix": [
+      [
+        418,
+        180
+      ],
+      [
+        303,
+        296
+      ]
+    ],
+    "auc": 0.6060086208340545,
+    "pr_auc": 0.5876802354564133,
+    "log_loss": 1.5430018612780856,
+    "brier_score": 0.28438387635756057,
+    "ece": 0.16027568922305763,
+    "confidence_mean": 0.44590643274853803,
+    "confidence_std": 0.29177665884543846,
+    "faithfulness_mean": 0.9944073145827532,
+    "tool_presence_mean": 0.9974937343358395,
+    "numeric_grounding_mean": 0.9913208948296668,
+    "trace_has_output_rate": 0.995,
+    "hallucination_rate": 0.005833333333333334,
+    "tool_stats_mean": {
+      "n_code": 3.4658333333333333,
+      "n_web": 0.005833333333333334,
+      "tool_success_rate": 1.0
+    },
+    "explanation_mean": {
+      "word_count": 1327.9575,
+      "forensic_term_count": 41.0275,
+      "forensic_specificity_ratio": 0.03077433019488552,
+      "manipulation_term_count": 33.545,
+      "content_term_count": 7.840833333333333,
+      "pathway_steps": 3.99,
+      "evidence_count": 3.4558333333333335,
+      "unique_forensic_categories": 3.4075,
+      "has_alternative_hypothesis_rate": 0.9975,
+      "has_plain_language_rate": 0.9975,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": -0.012244302559402202,
+      "spearman_r": -0.0046016374180107384,
+      "n": 1197
+    },
+    "evidence_verdict_alignment_mean": 0.9665831244778613,
+    "evidence_verdict_alignment_n": 1197,
+    "reasoning_connectivity_mean": 0.08327141666666667,
+    "connective_count_mean": 8.17,
+    "compactness_mean": 0.9877890559732665,
+    "category_coverage_ratio_mean": 0.37857383333333333
+  },
+  "anthropic|scenario2_self_cond|A": {
+    "n": 200,
+    "model": "claude-sonnet-4-6",
+    "accuracy": 0.675,
+    "precision": 0.7272727272727273,
+    "recall": 0.56,
+    "f1": 0.632768361581921,
+    "mcc": 0.3596417696999811,
+    "cohen_kappa": 0.35,
+    "confusion_matrix": [
+      [
+        79,
+        21
+      ],
+      [
+        44,
+        56
+      ]
+    ],
+    "auc": 0.7419999999999999,
+    "pr_auc": 0.7230332115564673,
+    "log_loss": 0.7104846533114539,
+    "brier_score": 0.2404045,
+    "ece": 0.18195000000000003,
+    "confidence_mean": 0.41985,
+    "confidence_std": 0.35075700634484835,
+    "trace_has_output_rate": 0.0,
+    "hallucination_rate": 0.025,
+    "tool_stats_mean": {
+      "n_code": 0.0,
+      "n_web": 0.0
+    },
+    "explanation_mean": {
+      "word_count": 1573.075,
+      "forensic_term_count": 9.165,
+      "forensic_specificity_ratio": 0.00588156793298654,
+      "manipulation_term_count": 0.67,
+      "content_term_count": 29.05,
+      "pathway_steps": 4.0,
+      "evidence_count": 4.73,
+      "unique_forensic_categories": 2.495,
+      "has_alternative_hypothesis_rate": 1.0,
+      "has_plain_language_rate": 0.995,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.07728671561761022,
+      "spearman_r": 0.0706680162776904,
+      "n": 200
+    },
+    "evidence_verdict_alignment_mean": 1.0,
+    "evidence_verdict_alignment_n": 200,
+    "reasoning_connectivity_mean": 0.1875315,
+    "connective_count_mean": 11.035,
+    "compactness_mean": 0.5275,
+    "category_coverage_ratio_mean": 0.2771945
+  },
+  "anthropic|scenario2_self_cond|B": {
+    "n": 200,
+    "model": "claude-sonnet-4-6",
+    "accuracy": 0.655,
+    "precision": 0.6703296703296703,
+    "recall": 0.61,
+    "f1": 0.6387434554973822,
+    "mcc": 0.311263179013415,
+    "cohen_kappa": 0.31000000000000005,
+    "confusion_matrix": [
+      [
+        70,
+        30
+      ],
+      [
+        39,
+        61
+      ]
+    ],
+    "auc": 0.6852499999999999,
+    "pr_auc": 0.655075442689418,
+    "log_loss": 0.7500720782028654,
+    "brier_score": 0.2479445,
+    "ece": 0.16934999999999997,
+    "confidence_mean": 0.43265,
+    "confidence_std": 0.32765603534804605,
+    "faithfulness_mean": 0.970625,
+    "tool_presence_mean": 1.0,
+    "numeric_grounding_mean": 0.9308823529411765,
+    "trace_has_output_rate": 0.1,
+    "hallucination_rate": 0.005,
+    "tool_stats_mean": {
+      "n_code": 8.085,
+      "n_web": 0.18,
+      "tool_success_rate": 1.0
+    },
+    "explanation_mean": {
+      "word_count": 1915.6,
+      "forensic_term_count": 30.91,
+      "forensic_specificity_ratio": 0.016170554044100487,
+      "manipulation_term_count": 17.54,
+      "content_term_count": 32.305,
+      "pathway_steps": 4.0,
+      "evidence_count": 5.44,
+      "unique_forensic_categories": 3.935,
+      "has_alternative_hypothesis_rate": 1.0,
+      "has_plain_language_rate": 1.0,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.007944537923330506,
+      "spearman_r": -0.013939084335159568,
+      "n": 200
+    },
+    "evidence_verdict_alignment_mean": 0.99,
+    "evidence_verdict_alignment_n": 200,
+    "reasoning_connectivity_mean": 0.1878075,
+    "connective_count_mean": 16.97,
+    "compactness_mean": 0.739174,
+    "category_coverage_ratio_mean": 0.437202
+  },
+  "anthropic|scenario2_local_inpaint|A": {
+    "n": 200,
+    "model": "claude-sonnet-4-6",
+    "accuracy": 0.525,
+    "precision": 0.543859649122807,
+    "recall": 0.31,
+    "f1": 0.39490445859872614,
+    "mcc": 0.05538148002957509,
+    "cohen_kappa": 0.050000000000000044,
+    "confusion_matrix": [
+      [
+        74,
+        26
+      ],
+      [
+        69,
+        31
+      ]
+    ],
+    "auc": 0.5453,
+    "pr_auc": 0.5381765619370987,
+    "log_loss": 1.053657242718165,
+    "brier_score": 0.35882000000000003,
+    "ece": 0.33720000000000006,
+    "confidence_mean": 0.34269999999999995,
+    "confidence_std": 0.32214392746100307,
+    "trace_has_output_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "tool_stats_mean": {
+      "n_code": 0.0,
+      "n_web": 0.0
+    },
+    "explanation_mean": {
+      "word_count": 1545.585,
+      "forensic_term_count": 8.635,
+      "forensic_specificity_ratio": 0.005611611099762418,
+      "manipulation_term_count": 0.54,
+      "content_term_count": 28.51,
+      "pathway_steps": 4.0,
+      "evidence_count": 4.695,
+      "unique_forensic_categories": 2.4,
+      "has_alternative_hypothesis_rate": 1.0,
+      "has_plain_language_rate": 1.0,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.05004565576508012,
+      "spearman_r": 0.06788357914345916,
+      "n": 200
+    },
+    "evidence_verdict_alignment_mean": 1.0,
+    "evidence_verdict_alignment_n": 200,
+    "reasoning_connectivity_mean": 0.1887125,
+    "connective_count_mean": 10.76,
+    "compactness_mean": 0.51225,
+    "category_coverage_ratio_mean": 0.26664
+  },
+  "anthropic|scenario2_local_inpaint|B": {
+    "n": 199,
+    "model": "claude-sonnet-4-6",
+    "accuracy": 0.5125628140703518,
+    "precision": 0.5238095238095238,
+    "recall": 0.33,
+    "f1": 0.4049079754601227,
+    "mcc": 0.028990381810198033,
+    "cohen_kappa": 0.026919393053384977,
+    "confusion_matrix": [
+      [
+        69,
+        30
+      ],
+      [
+        67,
+        33
+      ]
+    ],
+    "auc": 0.5676767676767677,
+    "pr_auc": 0.580292786408683,
+    "log_loss": 0.9292123799000869,
+    "brier_score": 0.3242015075376885,
+    "ece": 0.27804020100502513,
+    "confidence_mean": 0.36748743718592963,
+    "confidence_std": 0.30110135957289874,
+    "faithfulness_mean": 0.9330555555555555,
+    "tool_presence_mean": 0.95,
+    "numeric_grounding_mean": 0.9383838383838383,
+    "trace_has_output_rate": 0.1,
+    "hallucination_rate": 0.005,
+    "tool_stats_mean": {
+      "n_code": 6.8,
+      "n_web": 0.08,
+      "tool_success_rate": 1.0
+    },
+    "explanation_mean": {
+      "word_count": 1890.045,
+      "forensic_term_count": 31.39,
+      "forensic_specificity_ratio": 0.01661629372725662,
+      "manipulation_term_count": 17.865,
+      "content_term_count": 32.235,
+      "pathway_steps": 3.98,
+      "evidence_count": 5.405,
+      "unique_forensic_categories": 3.96,
+      "has_alternative_hypothesis_rate": 0.995,
+      "has_plain_language_rate": 0.99,
+      "evidence_completeness_score_mean": 1.0
+    },
+    "self_calibration": {
+      "pearson_r": 0.11923980112377187,
+      "spearman_r": 0.11430298478637994,
+      "n": 199
+    },
+    "evidence_verdict_alignment_mean": 0.9698492462311558,
+    "evidence_verdict_alignment_n": 199,
+    "reasoning_connectivity_mean": 0.1806235,
+    "connective_count_mean": 16.505,
+    "compactness_mean": 0.7494814070351759,
+    "category_coverage_ratio_mean": 0.439981
+  },
+  "__cross_condition_all__": {
+    "n_pairs": 7800,
+    "cross_condition_bleu1_mean": 0.44346760702002186,
+    "cross_condition_semantic_cosine_mean": 0.6766733505986349
+  },
+  "__bias_gap__": {
+    "gemini|condA": {
+      "scenario1_acc": 0.8330550918196995,
+      "scenario2_mean_acc": 0.7431192660550459,
+      "bias_gap": 0.0899,
+      "interpretation": "positive = model relies on dataset bias (inflated score in standard benchmark)"
+    },
+    "gemini|condB": {
+      "scenario1_acc": 0.644891122278057,
+      "scenario2_mean_acc": 0.603429560523382,
+      "bias_gap": 0.0415,
+      "interpretation": "positive = model relies on dataset bias (inflated score in standard benchmark)"
+    },
+    "anthropic|condA": {
+      "scenario1_acc": 0.745,
+      "scenario2_mean_acc": 0.6000000000000001,
+      "bias_gap": 0.145,
+      "interpretation": "positive = model relies on dataset bias (inflated score in standard benchmark)"
+    },
+    "anthropic|condB": {
+      "scenario1_acc": 0.745,
+      "scenario2_mean_acc": 0.5837814070351759,
+      "bias_gap": 0.1612,
+      "interpretation": "positive = model relies on dataset bias (inflated score in standard benchmark)"
+    },
+    "openai|condA": {
+      "scenario1_acc": 0.5525,
+      "scenario2_mean_acc": 0.7033333333333334,
+      "bias_gap": -0.1508,
+      "interpretation": "negative = model performs better on content-matched pairs"
+    },
+    "openai|condB": {
+      "scenario1_acc": 0.5508333333333333,
+      "scenario2_mean_acc": 0.622010760218936,
+      "bias_gap": -0.0712,
+      "interpretation": "negative = model performs better on content-matched pairs"
+    }
+  },
+  "__agentic_uplift__": {
+    "gemini|scenario2_self_cond": {
+      "condition_A_acc": 0.7606338615512928,
+      "condition_B_acc": 0.6103678929765887,
+      "uplift": -0.1503,
+      "interpretation": "negative = agentic tool use hurt accuracy"
+    },
+    "gemini|scenario2_local_inpaint": {
+      "condition_A_acc": 0.725604670558799,
+      "condition_B_acc": 0.5964912280701754,
+      "uplift": -0.1291,
+      "interpretation": "negative = agentic tool use hurt accuracy"
+    },
+    "gemini|scenario1": {
+      "condition_A_acc": 0.8330550918196995,
+      "condition_B_acc": 0.644891122278057,
+      "uplift": -0.1882,
+      "interpretation": "negative = agentic tool use hurt accuracy"
+    },
+    "anthropic|scenario2_self_cond": {
+      "condition_A_acc": 0.675,
+      "condition_B_acc": 0.655,
+      "uplift": -0.02,
+      "interpretation": "negative = agentic tool use hurt accuracy"
+    },
+    "anthropic|scenario2_local_inpaint": {
+      "condition_A_acc": 0.525,
+      "condition_B_acc": 0.5125628140703518,
+      "uplift": -0.0124,
+      "interpretation": "negative = agentic tool use hurt accuracy"
+    },
+    "anthropic|scenario1": {
+      "condition_A_acc": 0.745,
+      "condition_B_acc": 0.745,
+      "uplift": 0.0,
+      "interpretation": "no change"
+    },
+    "openai|scenario2_self_cond": {
+      "condition_A_acc": 0.7658333333333334,
+      "condition_B_acc": 0.6622185154295246,
+      "uplift": -0.1036,
+      "interpretation": "negative = agentic tool use hurt accuracy"
+    },
+    "openai|scenario2_local_inpaint": {
+      "condition_A_acc": 0.6408333333333334,
+      "condition_B_acc": 0.5818030050083473,
+      "uplift": -0.059,
+      "interpretation": "negative = agentic tool use hurt accuracy"
+    },
+    "openai|scenario1": {
+      "condition_A_acc": 0.5525,
+      "condition_B_acc": 0.5508333333333333,
+      "uplift": -0.0017,
+      "interpretation": "negative = agentic tool use hurt accuracy"
+    }
+  },
+  "__contrastive_sensitivity__": {
+    "n_pairs": 5193,
+    "mean_divergence": 0.1722,
+    "interpretation": "higher = model explains real vs fake differently (detects manipulation cues); lower = model describes shared content and flips verdict without distinct reasoning"
+  }
+}
