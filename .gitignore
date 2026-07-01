@@ -1,37 +1,12 @@
 # Secrets
 .env
 
-# Large dataset / generated images
-HICCS/data/
-multimedia_forensics_techniques/rvf10k/
-
 # Large raw result files (>100 MB GitHub limit) — hosted on Zenodo
 results/vlm_eval_raw.jsonl
 results/vlm_eval_scored.jsonl
 results/vlm_eval_results.zip
 
-
-# Model weights
-HICCS/models/
-
-# Virtual environments
-HICCS/venv/
-HICCS/venv-api/
-
 # Python cache
 __pycache__/
 *.pyc
 *.pyo
-
-# OS / editor artifacts
-.DS_Store
-.vscode/
-*.code-workspace
-
-# Word temp files
-~$*.docx
-*.docx
-
-# Presentations
-*.pptx
-unpacked/
