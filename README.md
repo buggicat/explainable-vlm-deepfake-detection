@@ -14,7 +14,10 @@ explainable-vlm-deepfake-detection/
 │   ├── 4_run_vlm_eval.py               # Run VLM evaluation via commercial APIs
 │   ├── 5_compute_metrics.py            # Score raw results (accuracy, F1, AUC, XAI)
 │   ├── 6_explanations_llm_judge.py     # LLM-as-judge groundedness audit
-│   └── 7_export_metric_tables.py       # Export metric tables to metric_outputs/
+│   ├── 7_export_metric_tables.py       # Export metric tables to metric_outputs/
+│   ├── bootstrap_ci.py                 # Bootstrap CIs for accuracy, bias gap, uplift, XAI metrics
+│   ├── redundancy_check.py             # Cross-family metric redundancy spot-check
+│   └── s1_baseline_sensitivity.py      # Scenario-1 unrelated-pair baseline for contrastive sensitivity
 ├── prompts/
 │   ├── promptv6_baseline.txt           # Condition A: visual-only prompt
 │   ├── promptv6_agentic.txt            # Condition B: agentic prompt
@@ -152,16 +155,14 @@ Outputs `results/vlm_eval_scored.summary.json` with accuracy, F1, AUC, bias gap,
 > **Skip if:** `results/explanation_audit.jsonl` and `results/explanation_audit_summary.json` already exist (included in this repo).
 
 ```bash
-python scripts/6_explanations_llm_judge.py \
-  --in      results/vlm_eval_scored.jsonl \
-  --out     results/explanation_audit.jsonl \
-  --summary results/explanation_audit_summary.json \
-  --sample 200 \
-  --providers openai gemini \
-  --condition B
+python scripts/6_explanations_llm_judge.py
 ```
 
-Uses Claude as an independent judge to audit groundedness of agentic explanations.
+Uses Claude as an independent judge to audit groundedness of agentic explanations. Reads
+`results/full_run.scored.jsonl` and judges a fixed, deterministic stratified sample (n=198:
+99 GPT + 99 Gemini, condition B only, seed 42 — no CLI flags; edit the `SAMPLE_*` constants
+at the top of the script to change the sample). Resumable — re-running skips records already
+present in the output file.
 
 ### 7. Export paper tables
 
@@ -174,6 +175,39 @@ python scripts/7_export_metric_tables.py \
 ```
 
 Writes all paper tables as `.txt` files to `metric_outputs/`.
+
+### 8. Bootstrap confidence intervals
+
+> **Skip if:** `results/bootstrap_ci.json` already exists (included in this repo).
+
+```bash
+python scripts/bootstrap_ci.py
+```
+
+Computes 95% percentile bootstrap CIs (2,000 resamples) for detection accuracy, bias gap,
+agentic uplift, and every explanation-quality metric reported in the paper's tables.
+
+### 9. Redundancy check
+
+> **Skip if:** `results/redundancy_ci.json` already exists (included in this repo).
+
+```bash
+python scripts/redundancy_check.py
+```
+
+Spot-checks pairwise correlations between metrics from different families, to confirm the
+framework measures largely distinct constructs rather than one factor repeated across metrics.
+
+### 10. Scenario-1 baseline for contrastive sensitivity
+
+> **Skip if:** `results/s1_baseline_ci.json` already exists (included in this repo).
+
+```bash
+python scripts/s1_baseline_sensitivity.py
+```
+
+Computes the unrelated-pair divergence baseline for Scenario 1 (which has no content-matched
+real/fake pairing), for comparison against Scenario 2's contrastive sensitivity.
 
 ## Results
 
@@ -190,6 +224,9 @@ Pre-computed results from our run are included in `results/`:
 | `explainability_metrics.csv` | XAI quality scores |
 | `cross_condition_metrics.csv` | Cross-condition consistency |
 | `headline_results.json` | Top-line numbers cited in the paper |
+| `bootstrap_ci.json` | 95% bootstrap CIs for accuracy, bias gap, uplift, and XAI metrics |
+| `redundancy_ci.json` | Cross-family metric redundancy correlations |
+| `s1_baseline_ci.json` | Scenario-1 unrelated-pair contrastive-sensitivity baseline |
 
 > The raw response files (`vlm_eval_raw.jsonl`, `vlm_eval_scored.jsonl`) are excluded from this repo due to size. They are available on Zenodo at https://doi.org/10.5281/zenodo.21009932 as `vlm_eval_results.zip`, or can be reproduced by running scripts 4–5.
 
