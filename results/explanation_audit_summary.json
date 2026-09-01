@@ -1,31 +1,31 @@
 {
   "n_judged": 198,
   "by_group": {
-    "gemini-2.5-pro|scenario1|B": {
-      "n": 33,
-      "groundedness_mean": 4.515
-    },
-    "gemini-2.5-pro|scenario2_local_inpaint|B": {
+    "gemini|scenario1|B": {
       "n": 33,
       "groundedness_mean": 4.576
     },
-    "gemini-2.5-pro|scenario2_self_cond|B": {
+    "gemini|scenario2_local_inpaint|B": {
       "n": 33,
-      "groundedness_mean": 4.727
+      "groundedness_mean": 4.667
     },
-    "gpt-5.4-mini|scenario1|B": {
+    "gemini|scenario2_self_cond|B": {
       "n": 33,
-      "groundedness_mean": 3.303
+      "groundedness_mean": 4.818
     },
-    "gpt-5.4-mini|scenario2_local_inpaint|B": {
+    "openai|scenario1|B": {
       "n": 33,
-      "groundedness_mean": 3.424
+      "groundedness_mean": 3.0
     },
-    "gpt-5.4-mini|scenario2_self_cond|B": {
+    "openai|scenario2_local_inpaint|B": {
       "n": 33,
-      "groundedness_mean": 3.152
+      "groundedness_mean": 2.97
+    },
+    "openai|scenario2_self_cond|B": {
+      "n": 33,
+      "groundedness_mean": 2.939
     }
   },
-  "groundedness_mean": 3.949,
-  "hallucination_detected_rate": 0.303
+  "groundedness_mean": 3.828,
+  "hallucination_detected_rate": 0.313
 }

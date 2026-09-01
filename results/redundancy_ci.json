@@ -1,0 +1,68 @@
+{
+  "n_boot": 2000,
+  "alpha": 0.05,
+  "seed": 20260819,
+  "pairs": {
+    "tool_presence__x__numeric_grounding": {
+      "point": 0.06094597580949178,
+      "ci_lo": 0.048886088546459566,
+      "ci_hi": 0.07176841222537304,
+      "n": 7225,
+      "excludes_zero": true,
+      "family_x": "Faithfulness/Grounding (construction check)",
+      "family_y": "Faithfulness/Grounding (construction check)",
+      "condition_filter": "B"
+    },
+    "numeric_grounding__x__alignment": {
+      "point": 0.33329633659242025,
+      "ci_lo": 0.3150220112132552,
+      "ci_hi": 0.3505440049031136,
+      "n": 7225,
+      "excludes_zero": true,
+      "family_x": "Faithfulness/Grounding",
+      "family_y": "Reasoning Coherence",
+      "condition_filter": "B"
+    },
+    "faithfulness__x__connectivity": {
+      "point": 0.5511033669401934,
+      "ci_lo": 0.5347549769207751,
+      "ci_hi": 0.5665563670513895,
+      "n": 7241,
+      "excludes_zero": true,
+      "family_x": "Faithfulness/Grounding",
+      "family_y": "Reasoning Coherence",
+      "condition_filter": "B"
+    },
+    "forensic_specificity__x__connectivity": {
+      "point": -0.5703151851279373,
+      "ci_lo": -0.5797000954165561,
+      "ci_hi": -0.5608561392520572,
+      "n": 15600,
+      "excludes_zero": true,
+      "family_x": "Explanation Content",
+      "family_y": "Reasoning Coherence",
+      "condition_filter": null
+    },
+    "category_coverage__x__tool_presence": {
+      "point": 0.05598721252643988,
+      "ci_lo": 0.025084987519562126,
+      "ci_hi": 0.08367315151531739,
+      "n": 7241,
+      "excludes_zero": true,
+      "family_x": "Explanation Content",
+      "family_y": "Faithfulness/Grounding",
+      "condition_filter": "B"
+    },
+    "evidence_completeness__x__faithfulness": {
+      "point": null,
+      "ci_lo": null,
+      "ci_hi": null,
+      "n": 7241,
+      "excludes_zero": false,
+      "note": "undefined \u2014 near-constant input (little/no variance to correlate)",
+      "family_x": "Explanation Content (control)",
+      "family_y": "Faithfulness/Grounding",
+      "condition_filter": "B"
+    }
+  }
+}
